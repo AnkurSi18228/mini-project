@@ -61,6 +61,16 @@
     padding: 6% 40px 6% 40px;
     margin: -15% 20% 30px 20%;
     border-radius: 20px;
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
 }
 
 .content .banner-content h1{
@@ -192,4 +202,13 @@ footer .footer-main .foot-right .fa-twitter:hover{
 footer{
     padding: 20px 20px 10px 20px;
 }
+}
+
+#preloader{
+    background: rgb(36, 35, 35) url(new-preloader.gif) no-repeat center center;
+    background-size: 70%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
