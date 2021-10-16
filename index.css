@@ -178,6 +178,9 @@ footer .footer-main .foot-right .fab{
 
 
 /* Utility classes */
+.banner-content a:hover{
+    text-shadow: 2px 2px 10px white;
+}
 footer .footer-main .foot-right .fa-facebook-f:hover{
     color: rgb(41, 41, 141);
 }
