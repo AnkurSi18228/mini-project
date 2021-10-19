@@ -16,8 +16,17 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <style>
+        header nav {
+            box-shadow: 2px 2px 10px rgb(63, 63, 63);
+        }
+
+        header #navbar-heading:hover {
+            text-shadow: 2px 2px 10px white;
+        }
+
         .contact {
             padding: 65px 100px 100px 50px;
+            background: url(/1630480676445.jpg);
         }
 
         .main {
@@ -25,16 +34,21 @@
             justify-content: space-between;
         }
 
+        .contact .main .left {
+            color: white;
+        }
+
         .contact .main #buzz {
             font-weight: bold;
             border-radius: 20px;
-            padding: 10px 20px 10px 20px;
+            padding: 5px 20px 5px 20px;
+            margin-top: 3px;
             border: .3px solid gray;
             color: gray;
         }
 
         .contact .main #buzz:hover {
-            box-shadow: 5px 5px 25px rgb(27, 27, 27);
+            box-shadow: 3px 3px 15px red;
             color: white;
             background-color: grey;
             text-shadow: 2px 2px 10px white;
@@ -50,7 +64,7 @@
             }
 
             .contact .main .left {
-                margin-bottom: 20px;
+                margin-bottom: 27px;
             }
         }
     </style>
@@ -63,7 +77,8 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container-fluid ">
-                <a class="navbar-brand" href="index.html" style="font-size: 30px;">samphoto_gallery</a>
+                <a class="navbar-brand" id="navbar-heading" href="index.html"
+                    style="font-size: 30px;">samphoto_gallery</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -117,7 +132,7 @@
                             <label for="floatingTextarea2" style="color: grey;">Write you query here!</label>
                         </div>
                         <br>
-                        <button type="submit" id="buzz" class="btn btn-light">Light</button>
+                        <button type="submit" id="buzz" class="btn btn-light">Submit</button>
                     </form>
                 </div>
             </div>
@@ -149,6 +164,7 @@
             loader.style.display = "none";
         })
     </script>
+
 </body>
 
 </html>
